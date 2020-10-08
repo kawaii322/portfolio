@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title id="title"></title>
+	<meta charset="utf-8" name="description" content="Portfolio">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/ico" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="libs/vivify/vivify.min.css">
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<p class="logoText">Danil Dikiy</p>
+		</div>
+		<div class="menu">
+			<div class="navigation" id="navigation">
+				<p class="menuNavigation" id="aboutMe"></p>
+				<p class="menuNavigation" id="projects"></p>
+				<p class="menuNavigation" id="contacts"></p>
+			</div>
+		</div>	
+		<div class="language">
+			<div class="languageButtons" id="languageButtons">
+				<div class="languageBut ru">
+					<p class="languageText ru">RU</p>
+				</div>
+				<div class="languageBut en">
+					<p class="languageText en">EN</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="blockImg">
+			<picture>
+				<source srcset='img/main/main.jxr' type='image/vnd.ms-photo'>
+				<source srcset='img/main/main.jp2' type='image/jp2'>
+				<source srcset='img/main/main.webp' type='image/webp'>
+				<img alt="Image" class="mainImg" src="img/main/main.jpg">
+			</picture>
+		</div>
+		<div class="info" id="info">
+			<div class="person" id="person_1">
+				<ul class="listSchool">
+					<li id="listSchool"></li>
+				</ul>
+				<ul class="listUniversity">
+					<li id="listUniversity_1"></li>
+					<li id="listUniversity_2"></li>
+				</ul>
+			</div>
+			<div class="person" id="person_2">
+				<ul class="listBackend">
+					<li id="listBackend"></li>
+				</ul>
+				<ul class="listFrontend">
+					<li id="listFrontend"></li>
+				</ul>
+				<ul class="listOOP">
+					<li id="listOOP"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="projects" id="myProjects">
+			<a class="project" href="https://vk.com">
+				<picture>
+					<source srcset='img/main/main.jxr' type='image/vnd.ms-photo'>
+					<source srcset='img/main/main.jp2' type='image/jp2'>
+					<source srcset='img/main/main.webp' type='image/webp'>
+					<img alt="project" class="mainImg" src="img/main/main.jpg">
+				</picture>
+			</a>
+		</div>
+		<div class="mainImage" id="mainImage_1">
+			<picture>
+				<source srcset='img/project/project.jxr' type='image/vnd.ms-photo'>
+				<source srcset='img/project/project.jp2' type='image/jp2'>
+				<source srcset='img/project/project.webp' type='image/webp'>
+				<img alt="Image" src="img/project/project.jpg">
+			</picture>
+		</div>
+		<div class="communication" id="communication">
+			<div class="comm" id="comm_1">
+				<p id="commHeader" class="commHeader"></p>
+				<p id="country"></p>
+				<p id="email"></p>
+				<p id="phone_1"></p>
+				<p id="phone_2"></p>
+			</div>
+			<div class="comm" id="comm_2">
+				<form class="commForm">
+					<div class="data">
+						<input id="namePlaceholder" type="text" name="name" autocomplete="off" required>
+						<input id="emailPlaceholder" type="email" name="email" autocomplete="off" required>
+					</div>
+					<div class="data">
+						<input id="phonePlaceholder" type="text" name="phone" autocomplete="off">
+						<input id="addressPlaceholder" type="text" name="address" autocomplete="off">
+					</div>
+					<div class="theme">
+						<input id="themePLaceholder" type="text" name="theme" autocomplete="off" required>
+					</div>
+					<div class="message">
+						<textarea id="messagePlaceholder" name="message" autocomplete="off" required></textarea>
+					</div>
+					<div class="submit">
+						<input id="submitPlaceholder" type="submit" name="submit">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="mainImage" id="mainImage_2">
+			<picture>
+				<source srcset='img/communication/communication.jxr' type='image/vnd.ms-photo'>
+				<source srcset='img/communication/communication.jp2' type='image/jp2'>
+				<source srcset='img/communication/communication.webp' type='image/webp'>
+				<img alt="Image" src="img/communication/communication.jpg">
+			</picture>
+		</div>
+		<div class="map">
+			<div id="map"></div>
+		</div>
+	</main>	
+	<footer class="footer">
+		<a class="VK" href="https://vk.com/dikiy_poc">
+			<img alt="VK" id="VK" src="img/VK.png">
+			<img alt="VK" id="VK_hover" src="img/VK_hover.png">
+		</a>
+		<p class="directed">©2020 Danil Dikiy.</p>
+	</footer>
+	<script defer type="text/javascript" src="libs/wow/wow.min.js"></script>
+	<script defer type="text/javascript" src="js/animation.js"></script>
+	<script defer type="text/javascript" src="js/map.js"></script>
+	<script defer type="text/javascript" src="js/lang.js"></script>
+	<script defer type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

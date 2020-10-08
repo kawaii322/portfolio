@@ -59,7 +59,6 @@ function createMap (ymaps) {
 function loadScript (url, callback) {
 	let body = document.getElementsByTagName("body")[0];
 	let script = document.createElement("script");
-	script.rel = "preconnect";
 	script.defer = true;
 	script.type = "text/javascript";
 	script.charset = "utf-8";

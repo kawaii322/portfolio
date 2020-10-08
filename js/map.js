@@ -47,7 +47,7 @@ function createMap (ymaps) {
 
 	let myPlacemark = new ymaps.Placemark([48.56217600000001, 39.2495104], null, {
 		iconLayout: 'default#image',
-		iconImageHref: "./img/placemark.png",
+		iconImageHref: './img/placemark.png',
 		iconImageSize: [25, 36],
 		iconImageOffset: [-10, -36]
 	});
@@ -57,11 +57,11 @@ function createMap (ymaps) {
 }
 
 function loadScript (url, callback) {
-	let body = document.getElementsByTagName("body")[0];
-	let script = document.createElement("script");
+	let body = document.getElementsByTagName('body')[0];
+	let script = document.createElement('script');
 	script.defer = true;
-	script.type = "text/javascript";
-	script.charset = "utf-8";
+	script.type = 'text/javascript';
+	script.charset = 'utf-8';
 	script.src = url;
 	body.appendChild(script);
 	script.onload = function () {
@@ -75,10 +75,10 @@ function changeBackgroundColorMap (color) {
 
 function changeBackgroundLoaderMap (loader) {
 	if (loader) {
-		document.getElementsByClassName('map')[0].style.backgroundImage = "url('img/loader.gif')";
-		document.getElementsByClassName('map')[0].style.backgroundRepeat = "no-repeat";
-		document.getElementsByClassName('map')[0].style.backgroundPosition = "center";
+		document.getElementsByClassName('map')[0].style.backgroundImage = 'url("img/loader.gif")';
+		document.getElementsByClassName('map')[0].style.backgroundRepeat = 'no-repeat';
+		document.getElementsByClassName('map')[0].style.backgroundPosition = 'center';
 	} else {
-		document.getElementsByClassName('map')[0].style.backgroundImage = "none";
+		document.getElementsByClassName('map')[0].style.backgroundImage = 'none';
 	}
 }

@@ -1,5 +1,5 @@
-let menuNavigation = document.querySelectorAll(".menuNavigation");
-let navigation = document.getElementById("navigation");
+let menuNavigation = document.querySelectorAll('.menuNavigation');
+let navigation = document.getElementById('navigation');
 let menuArray = new Map([
 	['aboutMe', 'info'],
 	['projects', 'myProjects'],

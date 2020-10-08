@@ -5,10 +5,9 @@ insertBefore = head.insertBefore;
 appendChild = head.appendChild;
 
 head.insertBefore = function (newElement, referenceElement) {
-	if (
-		newElement.type === 'text/css') {
-		return;
-	}
+	if (newElement.type === 'text/css') {
+			return;
+		}
 	insertBefore.call(head, newElement, referenceElement);
 };
     
@@ -60,6 +59,7 @@ function createMap (ymaps) {
 function loadScript (url, callback) {
 	let body = document.getElementsByTagName("body")[0];
 	let script = document.createElement("script");
+	script.rel = "preconnect";
 	script.defer = true;
 	script.type = "text/javascript";
 	script.charset = "utf-8";

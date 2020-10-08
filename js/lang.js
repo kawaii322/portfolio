@@ -94,7 +94,7 @@ function changeLanguage (targetLanguage) {
 				}
 			}
 			
-			let src = "https://api-maps.yandex.ru/2.1/?apikey=ccc72bf4-e88e-4f3b-8778-b6ec9afb1dc8&lang=" + language + "_RU";
+			let src = "https://api-maps.yandex.ru/2.1/?apikey=ccc72bf4-e88e-4f3b-8778-b6ec9afb1dc8&lang=" + language + "_RU&mode=release";
 
 			loadScript (src, function() {
 				ymaps.load(createMap);

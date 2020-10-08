@@ -1,4 +1,23 @@
-let myMap;
+let myMap, head, insertBefore, appendChild;
+
+head = document.getElementsByTagName('head')[0];
+insertBefore = head.insertBefore;
+appendChild = head.appendChild;
+
+head.insertBefore = function (newElement, referenceElement) {
+	if (
+		newElement.type === 'text/css') {
+		return;
+	}
+	insertBefore.call(head, newElement, referenceElement);
+};
+    
+head.appendChild = function (newElement, referenceElement) {
+	if (newElement.type === 'text/css') {
+		return;
+	}
+	appendChild.call(head, newElement, referenceElement);
+};
 
 function createMap (ymaps) {
 
@@ -39,13 +58,13 @@ function createMap (ymaps) {
 }
 
 function loadScript (url, callback) {
-	let head = document.getElementsByTagName("body")[0];
+	let body = document.getElementsByTagName("body")[0];
 	let script = document.createElement("script");
 	script.defer = true;
 	script.type = "text/javascript";
 	script.charset = "utf-8";
 	script.src = url;
-	head.appendChild(script);
+	body.appendChild(script);
 	script.onload = function () {
 		callback();
 	}

@@ -13,7 +13,7 @@ let languageObject = {
 			"listBackend": "PHP (Laravel), SQL (MySQL, PostgresSQL)",
 			"listFrontend": "JavaScript (Vue.js), CSS (SCSS), HTML",
 			"listOOP": "Java, C/C++",
-			"commHeader": "Связаться",
+			"commHeader": "Контакты",
 			"country": "Страна Украина, город Луганск",
 			"email": "zer0charon@gmail.com",
 			"phone_1": "380953473098",

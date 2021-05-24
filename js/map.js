@@ -6,11 +6,11 @@ appendChild = head.appendChild;
 
 head.insertBefore = function (newElement, referenceElement) {
 	if (newElement.type === 'text/css') {
-			return;
-		}
+		return;
+	}
 	insertBefore.call(head, newElement, referenceElement);
 };
-    
+
 head.appendChild = function (newElement, referenceElement) {
 	if (newElement.type === 'text/css') {
 		return;
@@ -18,16 +18,16 @@ head.appendChild = function (newElement, referenceElement) {
 	appendChild.call(head, newElement, referenceElement);
 };
 
-function createMap (ymaps) {
+function createMap(ymaps) {
 
-	if(myMap) {
+	if (myMap) {
 		myMap.destroy();
 	}
 
 	changeBackgroundLoaderMap(false);
 
 	myMap = new ymaps.Map('map', {
-		center: [49,33],
+		center: [49, 33],
 		zoom: 6,
 		controls: []
 	}, {
@@ -36,7 +36,7 @@ function createMap (ymaps) {
 
 	myMap.behaviors.disable([
 		'dblClickZoom',
-		'drag', 
+		'drag',
 		'leftMouseButtonMagnifier',
 		'multiTouch',
 		'rightMouseButtonMagnifier',
@@ -53,10 +53,10 @@ function createMap (ymaps) {
 	});
 
 	myMap.geoObjects.add(myPlacemark);
-	
+
 }
 
-function loadScript (url, callback) {
+function loadScript(url, callback) {
 	let body = document.getElementsByTagName('body')[0];
 	let script = document.createElement('script');
 	script.defer = true;
@@ -69,11 +69,11 @@ function loadScript (url, callback) {
 	}
 }
 
-function changeBackgroundColorMap (color) {
+function changeBackgroundColorMap(color) {
 	document.getElementsByClassName('map')[0].style.backgroundColor = color;
 }
 
-function changeBackgroundLoaderMap (loader) {
+function changeBackgroundLoaderMap(loader) {
 	if (loader) {
 		document.getElementsByClassName('map')[0].style.backgroundImage = 'url("img/loader.gif")';
 		document.getElementsByClassName('map')[0].style.backgroundRepeat = 'no-repeat';

@@ -179,7 +179,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 	.mainImg {
-		width: 1000px;
+		width: 100%;
 		height: 450px;
 		-webkit-box-shadow:
 		0 1px 0 rgba(255,255,255,.2),
@@ -451,7 +451,6 @@ textarea:focus::-webkit-input-placeholder {
 	}
 
 		#map {
-
 			height: 100%;
 			width: 100%;
 		}
@@ -485,16 +484,19 @@ textarea:focus::-webkit-input-placeholder {
 				-webkit-transform:translate3d(0,0,0);
 				transform:translate3d(0,0,0);
 			}
+
 			.ymaps-2-1-77-map-bg{
 				background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAgMAAAAOFJJnAAAACVBMVEX6+vrn5+f09PSMzk0VAAAAGklEQVQY02MIYAADVoYECIOTYSQDWCDAgwUA204BfdYq8A4AAAAASUVORK5CYII=);
 				background-size:16px 16px;
 			}
+			
 			.ymaps-2-1-77-inner-panes,.ymaps-2-1-77-outer-panes{
 				display:block;
 				position:absolute;
 				padding:0!important;
 				margin:0!important;
 			}
+			
 			.ymaps-2-1-77-inner-panes{
 				overflow:hidden;
 				width:100%;
@@ -549,3 +551,128 @@ textarea:focus::-webkit-input-placeholder {
 			opacity:1;
 			transition: opacity 0.5s ease;
 		}
+
+@media (max-width: 1155px) {
+	.menu {
+		width: 60%;
+	}
+
+	.navigation {
+		width: 70%;
+	}
+
+	.mainImage {
+		height: 100%;
+	}
+
+	.mainImage img{
+		height: 300px;
+	}
+}
+
+@media (max-width: 1150px) {
+	.info {
+		height: 100%;
+	}
+
+	#listUniversity_1 {
+		height: 250px;
+	}
+}
+
+@media (max-width: 965px) {
+	#listUniversity_1 {
+		height: 300px;
+	}
+}
+
+@media (max-width: 900px) {
+	.blockImg {
+		display: none;
+	}
+}
+
+@media (max-width: 855px) {
+	.info {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.person {
+		width: 100%;
+		animation-name: fadeIn;
+	}
+
+	.person li {
+		height: 100% !important;
+		padding-bottom: 30px;
+		padding-right: 10px;
+	}
+}
+
+@media (max-width: 785px) {
+	.navigation {
+		width: 100%;
+	}
+}
+
+@media (max-width: 650px) {
+	.navigation {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.header {
+		height: 100%;
+		align-items: center;
+	}
+
+	.logo {
+		width: 100%;
+	}
+
+	.language {
+		width: 100%;
+	}
+
+	.mainImage img{
+		height: 250px;
+	}
+
+	.communication {
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+		padding-bottom: 20px;
+	}
+
+	.comm {
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	.map {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	.mainImage img{
+		height: 200px;
+	}
+}
+
+@media (max-width: 400px) {
+	.projects img {
+		transform: scale(0.75);
+		width: 100%;
+	}
+}
+
+@media (max-width: 350px) {
+	.mainImage img{
+		display: none;
+	}
+}
+

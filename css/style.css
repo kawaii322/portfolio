@@ -18,7 +18,7 @@
 	margin: 0;
 }
 
-html {
+html, body {
 	overflow-x: hidden;
 	overflow-y: visible;
 }
@@ -454,11 +454,7 @@ textarea:focus::-webkit-input-placeholder {
 			height: 100%;
 			width: 100%;
 		}
-
-			.ymaps-2-1-77-map {
-				mix-blend-mode: difference;
-			}
-
+		
 			.ymaps-2-1-77-ground-pane {
 				filter: grayscale(1);
 				-ms-filter: grayscale(1);
@@ -468,6 +464,7 @@ textarea:focus::-webkit-input-placeholder {
 			}
 
 			.ymaps-2-1-77-map{
+				mix-blend-mode: difference;
 				position:relative;
 				z-index:0;
 				display:block;

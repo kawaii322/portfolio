@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+    <title id='title'></title>
+    <meta name='description' content='Portfolio' charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='icon' href='recources/images/favicon.ico' type='image/ico'>
+    <link rel='preload' href='recources/css/app.css' as='style' onload="this.onload=null;this.rel='stylesheet'">
+    <link rel='preload' href='modules/vivify/vivify.min.css' as='style' onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel='stylesheet' href='recources/css/app.css'>
+        <link rel='stylesheet' href='modules/vivify/vivify.min.css'>
+    </noscript>
+</head>
+
+<body>
+    <header class='o-header-layout'>
+        <p class='c-header-logo'>Danil Dikiy</p>
+
+        <div class='o-header-menu'>
+            <nav class='o-header-menu-nav'>
+                <p class='c-header-menu-nav__button' id='about-me'></p>
+                <p class='c-header-menu-nav__button' id='projects'></p>
+                <p class='c-header-menu-nav__button' id='contacts'></p>
+            </nav>
+        </div>
+
+        <div class='o-language'>
+            <div class='o-language-items'>
+                <p class='c-language-items__button' id='ru'>RU</p>
+                <p class='c-language-items__button' id='en'>EN</p>
+            </div>
+        </div>
+    </header>
+
+    <main class='o-main-layout'>
+
+        <div class='o-welcome'>
+            <picture>
+                <source srcset='recources/images/welcome/welcome.webp' type='image/webp'>
+                <img class='c-welcome__image' alt='Welcome' src='recources/images/welcome/welcome.jpg'>
+            </picture>
+            <div class='o-welcome-item'>
+                <p class='c-welcome-item__text' id='welcome'></p>
+            </div>
+        </div>
+
+        <div class='o-about-me-list' id='about-me-list'>
+            <div class='o-about-me-list--first'>
+                <div class='o-about-me-list-item'>
+                    <img alt='School icon' src='recources/images/about-me/school.svg'>
+                    <p class='c-about-me-list-item__text' id='school-info'></p>
+                </div>
+                <div class='o-about-me-list-item'>
+                    <img alt='Luhansk university icon' src='recources/images/about-me/university-first.svg'>
+                    <p class='c-about-me-list-item__text' id='first-university-info'></p>
+                </div>
+                <div class='o-about-me-list-item'>
+                    <img alt='Belgorod university icon' src='recources/images/about-me/university-second.svg'>
+                    <p class='c-about-me-list-item__text' id='second-university-info'></p>
+                </div>
+            </div>
+            <div class='o-about-me-list--second'>
+                <div class='o-about-me-list-item'>
+                    <img alt='Backend icon' src='recources/images/about-me/backend.svg'>
+                    <p class='c-about-me-list-item__text' id='backend-info'></p>
+                </div>
+                <div class='o-about-me-list-item'>
+                    <img alt='Frontend icon' src='recources/images/about-me/frontend.svg'>
+                    <p class='c-about-me-list-item__text' id='frontend-info'></p>
+                </div>
+                <div class='o-about-me-list-item'>
+                    <img alt='Terminal icon' src='recources/images/about-me/terminal.svg'>
+                    <p class='c-about-me-list-item__text' id='terminal-info'></p>
+                </div>
+            </div>
+        </div>
+
+        <div class='o-projects-list' id='projects-list'>
+            <a class='o-projects-list-item' href='https://github.com/' target='_blank'>
+                <picture>
+                    <source srcset='recources/images/projects/test/welcome.webp' type='image/webp'>
+                    <img class='c-projects-list-item__image' alt='Project test'
+                        src='recources/images/projects/test/welcome.jpg'>
+                </picture>
+                <p class='c-projects-list-item__text'>Project 1</p>
+            </a>
+        </div>
+
+        <div class='o-banner' id='first-banner'>
+            <picture>
+                <source srcset='recources/images/banners/banner-first.webp' type='image/webp'>
+                <img class='c-banner__image' alt='First banner' src='recources/images/banners/banner-first.jpg'>
+            </picture>
+        </div>
+
+        <div class='o-communication' id='communication'>
+            <div class='o-communication--first'>
+                <div class='o-communication-contacts'>
+                    <p class='c-communication-contacts__header-text' id='communication-contacts'></p>
+                    <p id='communication-country'></p>
+                    <p id='communication-email'></p>
+                    <p class='communication-phone-ua'>
+                        <span id='communication-phone-ua--first'></span>
+                        <span id='communication-phone-ua--second'></span>
+                    </p>
+                    <p id='communication-phone-ru'></p>
+                </div>
+            </div>
+            <div class='o-communication--second'>
+                <form class='o-communication-form'>
+                    <div class='o-communication-form-row'>
+                        <input class='c-communication-form__column-input c-communication-form__input' id='form-name'
+                            type='text' name='name' autocomplete='off' required>
+                        <input class='c-communication-form__column-input c-communication-form__input' id='form-email'
+                            type='email' name='email' autocomplete='off' required>
+                    </div>
+                    <div class='o-communication-form-row'>
+                        <input class='c-communication-form__column-input c-communication-form__input' id='form-phone'
+                            type='text' name='phone' autocomplete='off' required>
+                        <input class='c-communication-form__column-input c-communication-form__input' id='form-address'
+                            type='text' name='address' autocomplete='off' required>
+                    </div>
+                    <div class='o-communication-form-row'>
+                        <input class='c-communication-form__input' id='form-theme' type='text' name='theme'
+                            autocomplete='off' required>
+                    </div>
+                    <div class='o-communication-form-row'>
+                        <textarea class='c-communication-form__input' id='form-message' name='message'
+                            autocomplete='off' required></textarea>
+                    </div>
+                    <div class='o-communication-form-row'>
+                        <input class='c-communication-form__button' id='form-submit' type='submit' name='submit'>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class='o-banner' id='second-banner'>
+            <picture>
+                <source srcset='recources/images/banners/banner-second.webp' type='image/webp'>
+                <img class='c-banner__image' alt='Second banner' src='recources/images/banners/banner-second.jpg'>
+            </picture>
+        </div>
+
+        <div class='o-map' id='map'></div>
+
+    </main>
+
+    <footer class='o-footer-layout'>
+        <div class='o-links'>
+            <a class='o-links-item' id='vk-image' href='https://vk.com/dikiy_poc' target='_blank'>
+                <img class='c-links-item__image--first' alt='VK' src='recources/images/footer/vk.svg'>
+                <img class='c-links-item__image--second' alt='VK' src='recources/images/footer/vk-hover.svg'>
+            </a>
+            <a class='o-links-item' id='telegram-image' href='https://t.me/dikiy_poc' target='_blank'>
+                <img class='c-links-item__image--first' alt='Telegram' src='recources/images/footer/telegram.svg'>
+                <img class='c-links-item__image--second' alt='Telegram'
+                    src='recources/images/footer/telegram-hover.svg'>
+            </a>
+        </div>
+        <p id='footer-text'>©2022 Danil Dikiy.</p>
+    </footer>
+
+    <script defer type='text/javascript' src='modules/wow/wow.min.js'></script>
+    <script defer type='text/javascript' src='recources/js/utils/animation.js'></script>
+    <script defer type='text/javascript' src='recources/js/app.js'></script>
+</body>
+
+</html>

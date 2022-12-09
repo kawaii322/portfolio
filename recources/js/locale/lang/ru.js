@@ -15,9 +15,8 @@ function getLanguage() {
             'communication-contacts': 'Контакты',
             'communication-country': 'Страна Украина, город Луганск',
             'communication-email': 'zer0charon@gmail.com',
-            'communication-phone-ua--first': '+38-(095)-347-30-98',
-            'communication-phone-ua--second': '+38-(072)-214-98-59',
-            'communication-phone-ru': '+7-(959)-214-98-59',
+            'communication-phone-ua': '+38-(095)-347-30-98',
+            'communication-phone-de': '+49-(160)-962-831-19',
         },
         placeholder: {
             'form-name': 'Имя',

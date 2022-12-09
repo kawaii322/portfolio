@@ -82,13 +82,13 @@ textarea:focus::-webkit-input-placeholder {
     transition: opacity 0.3s ease;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--color-primary);
-}
+} */
 
 .o-header-layout {
     display: flex;

@@ -27,7 +27,7 @@ function getLanguage() {
             'form-message': 'Add message...'
         },
         value: {
-            'form-submit': 'Отправить'
+            'form-submit': 'Send'
         }
     }
 }
